@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sample Java Documentation Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul class="navbar">
+            <li>
+                <header>
+                    <h1 class="main-title">Java Documentation</h1>
+                </header>
+            </li>
+            <li>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#Hello_World" class="nav-link">Hello World</a>
+            </li>
+            <li>
+                <a href="#Variables_and_Operators" class="nav-link">Variables and Operators</a>
+            </li>
+            <li>
+                <a href="#Conditionals_and_Logic" class="nav-link">Conditionals and Logic</a>
+            </li>
+            <li>
+                <a href="#Methods_and_Returns" class="nav-link">Methods and Returns</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <div class="entire-section-container">
+            <div class="section-container">
+                <section class="main-section" id="Introduction">
+
+                    <header>
+                        <h1>Introduction</h1>
+                    </header>
+                    <div>
+                        <p> &emsp; Java is a <strong>class-based</strong>, <strong>Object-oriented</strong> programming
+                            language (OOP). It was designed to be a <strong>
+                                high-level</strong>, <strong>general-purpose</strong> language to allow developers to
+                            run
+                            Java code without the need for recompilation
+                            on all platforms that support Java. Java syntax is similar to that of C++ and C#. However,
+                            Java
+                            requires less low-level facilities than the previously
+                            mentioned languages.
+                        </p>
+                        <p> &emsp; Java was first developed by James Gosling at Sun Microsystems in 1995 and different
+                            updated versions have been released ever since. The
+                            latest version, Java SE 15, was released on September 15, 2020. Java's portability as a
+                            language
+                            made it immensely popular amongst developers. The ability to run
+                            Java code on different machines with ony few or no changes to the code catapulted Java to
+                            become
+                            one most powerful programming language out there today.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <div class="section-container">
+                <section class="main-section" id="Hello_World">
+
+                    <header>
+                        <h1>Hello World</h1>
+                    </header>
+                    <div>
+                        <p> &emsp; One of the first programs that a beginner learning a new language is introduced to is
+                            called the <strong>Hello World</strong> program. The purpose of this program is to
+                            introduce some of the syntax of Java. The resulting output of this program is a simple
+                            message
+                            that prints "Hello, World!" to the screen. The program is written as follows:
+                        </p>
+                    </div>
+                    <div class="code-div">
+                        <code>
+                            public class Hello {<br/>
+                                &ensp; public static void main(String[] args){<br/>
+                                &ensp; &emsp; //Generates the output to the screen<br/>
+                                &ensp; &emsp; System.out.println("Hello, World!");<br/>
+                                &ensp; }<br/>
+                            }
+                        </code>
+                    </div>
+                    <div>
+                        <p> &emsp; When we compile and run this program the output we see on on the screen is:</p>
+                    </div>
+                    <div class="code-output">
+                        <code>Hello, World!</code>
+                    </div>
+                    <div>
+                        <p> &emsp; Java programs are compromised of <strong>Classes</strong> and
+                            <strong>Methods</strong>.
+                            Methods are made up of series of <strong>Statements</strong>.</p>
+                        </p>
+                        <div>
+                            <ul>
+                                <li>
+                                    &ensp;A <u>statement</u> is a line of code that performs an operation. The example
+                                    above
+                                    uses a print statement to perform the task of outputting
+                                    the phrase contained within the quotation (" ") to the display.
+                                </li>
+                                <br />
+                                <li>
+                                    &ensp;A <u>method</u> is a series of statements which perform a task and are
+                                    combined
+                                    within a single named function. Our print statement is within the medthod
+                                    called <code>main</code> in the example above.<br /><br />
+                                    &emsp; <code>public static void main(String[] args)</code><br /><br />
+                                </li>
+                                <li>
+                                    &ensp;A <u>class</u> is a collection of methods. The class name for the program
+                                    above is
+                                    called <code>Hello</code>. Class names begin with capital letters whereas method
+                                    names
+                                    begin with lowercase letters. The class names must match the file name.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="section-container">
+                <section class="main-section" id="Variables_and_Operators">
+
+                    <header>
+                        <h1>Variables and Operators</h1>
+                    </header>
+                    <div>
+                        <p>
+                            &emsp; In order to store values we need to declare <strong>variables</strong>. Variables are
+                            named locations where a given value is stored in. These values could be numbers, text, and
+                            any
+                            other
+                            types of data. Variables are declared using different <strong>types</strong> which determine
+                            what kind of values that variable can store. Here is an example of variable declaration:
+                        </p>
+                    </div>
+
+                    <div class="code-div">
+                        <code>char character;</code><br />
+                        <code>String firstName;</code><br />
+                        <code>int age;</code><br />
+                        <code>boolean isTrue;</code>
+                    </div>
+
+                    <div>
+                        <p>
+                            &emsp; There are four different types of variables that are declared in the above example:
+                        </p>
+                        <ul>
+                            <li>
+                                &ensp;Characters are declared using the keyword <code>char</code>.
+                            </li>
+                            <li>
+                                &ensp;<code>String</code> keyword is used to store "strings" of characters. Some type
+                                keywords are written with the first letter being uppercase. String is one of those
+                                types. If
+                                a variable
+                                name consists of two words, as in our example above, then the words are joined together
+                                and
+                                the first letter of the first word is written in lowercase. The following words start
+                                with
+                                an uppercase
+                                letter
+                            </li>
+                            <li>
+                                &ensp;Integers are declared using the keyword <code>int</code>.
+                            </li>
+                            <li>
+                                &ensp;Boolean values which are either <strong>true</strong> or <strong>false</strong>
+                                are
+                                declared using the keyword <code>boolean</code>.
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            &emsp; We can assign values to our variables by using an <strong>assignment</strong>
+                            statement.
+                            We can assign values during the declaration or after. Here are some examples of assignment
+                            statements:
+                        </p>
+                    </div>
+                    <div class="code-div">
+                        <code>String message = "Hello"; // Assigns the value "Hello" to the String variable named message</code><br />
+                        <code>isTrue = true;  // gives the boolean variable isTrue the value of true</code>
+                    </div>
+                    <div>
+                        <p>
+                            &emsp; Operations can be performed on certain types of variables by using
+                            <strong>operators</strong>. Operators are symbols that represent simple computations. Here
+                            is a
+                            list of some of the operators that
+                            Java uses to perform computations:
+                        </p>
+                        <ul>
+                            <li>
+                                &ensp;Addition => <code>+</code>
+                            </li>
+                            <li>
+                                &ensp;Subtraction => <code>-</code>
+                            </li>
+                            <li>
+                                &ensp;Multiplication => <code>*</code>
+                            </li>
+                            <li>
+                                &ensp;Division => <code>/</code>
+                            </li>
+                            <li>
+                                &ensp;Modulus => <code>%</code>
+                            </li>
+                        </ul>
+                        <div class="code-div">
+                            int x = 5;<br />
+                            int y = 6;<br />
+                            int sum = x + y;<br />
+                            System.out.println("The sum is: " + sum);
+                        </div>
+                        <div>
+                            <p>
+                                &emsp; The above example is a demonstration of the addition "<code>+</code>" operator.
+                                The
+                                two variable, <code>x</code> and <code>y</code>, are declared and assigned integer
+                                values. A
+                                third variable named <code>sum</code>
+                                is assigned the value of the sum of the values stored in the first two variables. We use
+                                the
+                                operator once again in our print statement, however, this time we are using it to
+                                combine
+                                our string text with the value stored in the sum variable.
+                                This is called string <strong>concatenation</strong>. The resulting output will be:
+                            </p>
+                        </div>
+                        <div class="code-output">
+                            <code>The sum is: 11</code>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="section-container">
+                <section class="main-section" id="Conditionals_and_Logic">
+
+                    <header>
+                        <h1>Conditionals and Logic</h1>
+                    </header>
+                    <div>
+                        <p>
+                            &emsp; In order to perform more complex computations we need to incorporate some logic into
+                            our
+                            programs. This complexity could be achieved through the use of <strong>relational
+                                operators</strong>. These operators are combined to form logic statements
+                            that enable us to performs tasks with when certain conditions are met. Here is a list of
+                            relational operators that are implemented by Java:
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="bulletless">
+                                &ensp;<code>x == y &emsp; // x is equal to y</code>
+                            </li>
+                            <li class="bulletless">
+                                &ensp;<code>x != y &emsp; // x is not equal to y</code>
+                            </li>
+                            <li class="bulletless">
+                                &ensp;<code>x > y &emsp; // x is greater then y</code>
+                            </li>
+                            <li class="bulletless">
+                                &ensp;<code>x < y &emsp; // x is less than y</code>
+                            </li>
+                            <li class="bulletless">
+                                &ensp;<code>x >= y &emsp; // x is greater than or equal to y</code>
+                            </li>
+                            <li class="bulletless">
+                                &ensp;<code>x <= y &emsp; // x is less than or equal to y</code>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>
+                            &emsp; Java has three <strong>logical operators</strong> that are used to combine different
+                            relational operators. These operators are <code>&&</code>, <code>||</code>, and
+                            <code>!</code>.
+                            <code>&&</code> stands for the <i>and</i>, <code>||</code> for <i>or</i>,
+                            and <code>!</code> stands for <i>not</i>. Lets look at an example of logical statements in
+                            action:
+                        </p>
+                        <div>
+                            <ul class="bulletless">
+                                <li class="bulletless">
+                                    <code>( x > 4 ) && ( z != 0 ) </code>
+                                </li>
+                                <li class="bulletless">
+                                    <code>( w == 2 ) || ( y < 8 )</code>
+                                </li>
+                                <li class="bulletless">
+                                    <code>!( p == 5 )</code>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p>
+                                &emsp; The first statement above is true if and only if both relational operators (those
+                                within the parenthesis) are true. The second example returns a value that is true if at
+                                least one of the relational operators is true. And the last example negates the truthy
+                                value
+                                of the relational operator. This means if the relational operator within the parenthesis
+                                is
+                                true then our final result is the opposite which is false and vice versa.
+                            </p>
+                            <p>
+                                &emsp; We are able to build upon these basic operators to form <strong>conditional
+                                    statements</strong> in Java. In order to create conditional blocks of code we use a
+                                combination of <i>if</i>, <i>else if</i>, and <i>else</i> statements. Here is an example
+                                of
+                                a simple block of
+                                code that represents a conditional statement:
+                            </p>
+                        </div>
+                        <div class="code-div">
+                            <code>if ( x == 5 ) {<br/>
+                                &emsp; System.out.println(" x is equal to 5 ");<br/>
+                            }  else if ( x == 6 ) {<br/>
+                                &emsp; System.out.println(" x is equal to 6 ");<br/>
+                            }  else {<br/>
+                                &emsp; System.out.println(" x is equal to 0 ");<br/>
+                            }
+                            </code>
+                        </div>
+                        <div>
+                            <p>
+                                &emsp; We enter the conditional block by checking the first <i>if</i> statement. If the
+                                condition within the parenthesis is true then we run the code within the brackets and
+                                exit
+                                the conditional block without checking the other conditions. If not, then we move on to
+                                the
+                                <i>else if</i> statement.
+                                The same logic applies here as well. Finally if we haven't exited the conditional block
+                                before the last <i>else</i> statement then the we will exit by running the code within
+                                the
+                                <i>else</i> block.
+                            </p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <div class="section-container">
+                <section class="main-section" id="Methods_and_Returns">
+
+                    <header>
+                        <h1>Methods and Returns</h1>
+                    </header>
+                    <div>
+                        <p>
+                            &emsp; In order to have an organized program that has a consistent delegation of task we
+                            must
+                            implement different <strong>methods</strong>. Java has libraries of its own that come with
+                            their
+                            own classes and methods. One such example is the <code>Math</code> class. This class has
+                            methods
+                            that you could
+                            access and use within your code. When writing your own methods you must state the type of
+                            <strong>return</strong> value the method will give back to the caller. You could opt out of
+                            a
+                            return value by using the keyword <code>void</code>. Void methods will perform tasks without
+                            returning a value. If you would
+                            like the return value to be an integer then you must use the keyword <code>int</code>, for
+                            string <code>string</code>, and so on. You must also give each method a name. We follow the
+                            same
+                            rule as variable naming meaning if a method name is made up of more than one word then the
+                            first
+                            letter of the first word is
+                            lowercase. The following words start with capital letters. No spaces allowed. And finally,
+                            methods have <strong>parameters</strong>. The parameters are set when creating methods. You
+                            could opt out and leave the parameter section blank. However, if you want your methods to
+                            manipulate some data then you must
+                            name the parameters. Here is a code snippet that demonstrates a simple method structure:
+                        </p>
+                    </div>
+                    <div class="code-div">
+                        <code>public static int sum( int x, int y ){<br/>
+                            &emsp; int sum = x + y;<br/>
+                            &emsp; return sum;
+                        </code>
+                    </div>
+                    <div>
+                        <p>
+                            &emsp; The example above is method named <code>sum</code> that has two parameter arguments
+                            that
+                            are both integer and it returns an integer value back to the caller. When the method is
+                            called,
+                            the values that are sent into the method are given to the parameter arguments. When we enter
+                            the
+                            method, the values stored in
+                            the parameter arguments are added and the total value is assigned to an integer called
+                            <code>sum</code>. Then the keyword <code>return</code> is used to return the value of
+                            <code>sum</code>.
+
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
