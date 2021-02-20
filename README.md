@@ -1,3 +1,3 @@
 # Sample-Technical-Documentation-Page
 
-## Created using HTML and CSS
+Created using HTML and CSS
